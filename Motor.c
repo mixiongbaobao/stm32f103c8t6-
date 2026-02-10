@@ -14,7 +14,7 @@ void Motor_Init(void)
 	
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5|GPIO_Pin_10|GPIO_Pin_7;
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);						//将PA4和PA5和PA6和PA7引脚初始化为推挽输出	
 	
@@ -45,14 +45,15 @@ void Motor_SetSpeed2(int8_t Speed)
 {
 	if (Speed >= 0)							//如果设置正转的速度值
 	{
-		GPIO_SetBits(GPIOA, GPIO_Pin_10);	//PA6置高电平
+		GPIO_SetBits(GPIOA, GPIO_Pin_6);	//PA6置高电平
 		GPIO_ResetBits(GPIOA, GPIO_Pin_7);	//PA7置低电平，设置方向为正转
 		PWM_SetCompare2(Speed);				//PWM设置为速度值
 	}
 	else									//否则，即设置反转的速度值
 	{
-		GPIO_ResetBits(GPIOA, GPIO_Pin_10);	//PA6置低电平
+		GPIO_ResetBits(GPIOA, GPIO_Pin_6);	//PA6置低电平
 		GPIO_SetBits(GPIOA, GPIO_Pin_7);	//PA7置高电平，设置方向为反转
 		PWM_SetCompare2 (-Speed);			//PWM设置为负的速度值，因为此时速度值为负数，而PWM只能给正数
 	}
 }
+
