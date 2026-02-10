@@ -1,9 +1,15 @@
- #软件
-  使用stm32f103c8t6最小系统板制作的五路循迹小车，包含软件调试和引脚定义还有硬件连接，
-  需要配合江科协是stm32标准库的文件使用，hardware是所有硬件部分，system是延时函数，
-  需要在keil中创建这两个文件夹。
- #我会在开学后更新小车硬件连接的照片细节
-  
+    #软件
+     使用stm32f103c8t6最小系统板制作的五路循迹小车，包含软件调试和引脚定义还有硬件连接，
+     需要配合江科协是stm32标准库的文件使用，hardware是所有硬件部分，system是延时函数，
+     需要在keil中创建这两个文件夹。
+    #软件使用（1-4放在hardware文件中，5放在system文件夹中）
+    1.pwm.c/pwm.h（pwm输出函数）
+    2.motor.h/motor.c（电机传动控制函数）
+    3.motion.h/motion.c（小车运动控制函数）
+    4.track.c/track.h（循迹模块控制函数）
+    5.Delay.c/Delay.h（延时函数）
+    6.main.c
+
     #硬件使用
     1.stm32f103c8t6最小系统板（一个）https://detail.tmall.com/item.htm?abbucket=17&id=626358704662&mi_id=00008pC6RYJkEn-8k2NA56sUtgddAHk1n5i8JHBfFajF0E&ns=1&skuId=4615420869688&spm=a21n57.1.hoverItem.2&utparam=%7B%22aplus_abtest%22%3A%22dd5977338b65e4da924227218f2197f7%22%7D&xxc=taobaoSearch
     2.tb6612（一个）
@@ -16,3 +22,4 @@
     https://detail.tmall.com/item.htm?abbucket=17&id=799039797204&mi_id=0000V2XRkT6oWD-iDVfcejgF-E0HCU7gG5VAhR1ZNNpKmP4&ns=1&priceTId=2150437317707274453262592e12e1&spm=a21n57.1.hoverItem.40&utparam=%7B%22aplus_abtest%22%3A%2291195d5a6fe4a88e343fbc0dbfc00df0%22%7D&xxc=taobaoSearch
     5.锂电池（一个）（要公头的）
     https://item.taobao.com/item.htm?abbucket
+     #我会在开学后更新小车硬件连接的照片细
