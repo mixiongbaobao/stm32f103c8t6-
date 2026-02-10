@@ -2,7 +2,7 @@
   使用stm32f103c8t6最小系统板制作的五路循迹小车，包含软件调试和引脚定义还有硬件连接，
   需要配合江科协是stm32标准库的文件使用，hardware是所有硬件部分，system是延时函数，
   需要在keil中创建这两个文件夹。
-  
+ #我会在开学后更新小车照片细节
   
     #硬件使用
     1.stm32f103c8t6最小系统板（一个）https://detail.tmall.com/item.htm?abbucket=17&id=626358704662&mi_id=00008pC6RYJkEn-8k2NA56sUtgddAHk1n5i8JHBfFajF0E&ns=1&skuId=4615420869688&spm=a21n57.1.hoverItem.2&utparam=%7B%22aplus_abtest%22%3A%22dd5977338b65e4da924227218f2197f7%22%7D&xxc=taobaoSearch
