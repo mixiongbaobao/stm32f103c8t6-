@@ -7,20 +7,15 @@
 #define TRACK_LEFT_PORT    GPIOB
 #define TRACK_MIDDLE_PORT  GPIOB
 #define TRACK_RIGHT_PORT   GPIOB
-#define TRACK_RIGHTIR_PORT GPIOB
-#define TRACK_LEFTIR_PORT  GPIOB
 #define TRACK_LEFT_PIN     GPIO_Pin_10
 #define TRACK_MIDDLE_PIN   GPIO_Pin_1
 #define TRACK_RIGHT_PIN    GPIO_Pin_0
-#define TRACK_LEFTIR_PIN   GPIO_Pin_6
-#define TRACK_RIGHTIR_PIN  GPIO_Pin_7
+
 // 新增两路循迹引脚（GPIOB）
 #define TRACK_LEFT_EXT_PORT  GPIOB   // 左外侧传感器
 #define TRACK_RIGHT_EXT_PORT GPIOB   // 右外侧传感器
-#define TRACK_FRONT_PORT     GPIOB   //中侧传感器 
 #define TRACK_LEFT_EXT_PIN   GPIO_Pin_4  // 新增左外侧引脚
 #define TRACK_RIGHT_EXT_PIN  GPIO_Pin_8 // 新增右外侧引脚
-#define TRACK_FRONT_PIN      GPIO_Pin_3 // 新增侧引脚
 
 // 检测状态定义（保持不变）
 #define TRACK_BLACK  1   // 检测到黑线
@@ -38,4 +33,5 @@ uint8_t Track_GetRightExtState(void);   // 新增右外侧状态获取
 void Track_Run(void);
 
 #endif
+
 
