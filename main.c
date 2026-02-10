@@ -12,9 +12,10 @@ int main(void)
 	/*模块初始化*/
 	PWM_Init();
 	Motor_Init();
-  Track_Init();
+    Track_Init();
 	while (1)
 	{
-    Car_Up();
+    Track_Run();
 	} 
 }
+
