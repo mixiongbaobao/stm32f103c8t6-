@@ -1,2 +1,18 @@
-# stm32f103c8t6-
-stm32f103c8t6五路循迹小车
+ #软件
+  使用stm32f103c8t6最小系统板制作的五路循迹小车，包含软件调试和引脚定义还有硬件连接，
+  需要配合江科协是stm32标准库的文件使用，hardware是所有硬件部分，system是延时函数，
+  需要在keil中创建这两个文件夹。
+  
+  
+    #硬件使用
+    1.stm32f103c8t6最小系统板（一个）https://detail.tmall.com/item.htm?abbucket=17&id=626358704662&mi_id=00008pC6RYJkEn-8k2NA56sUtgddAHk1n5i8JHBfFajF0E&ns=1&skuId=4615420869688&spm=a21n57.1.hoverItem.2&utparam=%7B%22aplus_abtest%22%3A%22dd5977338b65e4da924227218f2197f7%22%7D&xxc=taobaoSearch
+    2.tb6612（一个）
+    https://item.taobao.com/item.htm?ali_refid=a3_430582_1006%3A1122812217%3AN%3AyJfh7Yot4OSyAiwcAuJLQg%3D%3D%3A360276814231d647d58b4b6d34a98eae&ali_trackid=1_360276814231d647d58b4b6d34a98eae&id=607254624071&mi_id=0000qxD3Id4g4D6djAdmbuM9xP29q33mIC2FQpoWsXZyTgY&mm_sceneid=1_0_114003394_0&priceTId=2150437317707272775385861e12e1&skuId=5205675671361&spm=a21n57.1.hoverItem.1&utparam=%7B%22aplus_abtest%22%3A%22ed53b812551294b7550c9596407f23c3%22%7D&xxc=ad_ztc
+    3.tcrt5000传感器（5个）
+    https://detail.tmall.com/item.htm?ali_refid=a3_420434_1006%3A1109448581%3AH%3AlZqLjCh5QPhYUQjsUqQJPg%3D%3D%3Ab981fedaab1b4b372bad4f4bae16ff3b&ali_trackid=282_b981fedaab1b4b372bad4f4bae16ff3b&id=652080256163&mi_id=0000oJZZhXM8kTOC03BwhH5czLNqNFzxAdPxc3bj0xU5YJc&mm_sceneid=1_0_57814139_0&priceTId=2150437317707273067917917e12e1&spm=a21n57.1.item.2&utparam=%7B%22aplus_abtest%22%3A%22590ce2c871c90dcf118e366796fec6f5%22%7D&xxc=ad_ztc
+    3.小车套件（要新双层4wd）
+    https://detail.tmall.com/item.htm?abbucket=17&id=649285258030&mi_id=0000o3BoxIxzax5zzK6BcPv9i5vtdcVcFQnnG1kLlZlcz5E&ns=1&priceTId=2150437317707273618344455e12e1&skuId=5827969531607&spm=a21n57.1.hoverItem.5&utparam=%7B%22aplus_abtest%22%3A%227c0874d2b3c5ae258962d01d0b34ea9b%22%7D&xxc=taobaoSearch
+    4.直流降压模块（一个）
+    https://detail.tmall.com/item.htm?abbucket=17&id=799039797204&mi_id=0000V2XRkT6oWD-iDVfcejgF-E0HCU7gG5VAhR1ZNNpKmP4&ns=1&priceTId=2150437317707274453262592e12e1&spm=a21n57.1.hoverItem.40&utparam=%7B%22aplus_abtest%22%3A%2291195d5a6fe4a88e343fbc0dbfc00df0%22%7D&xxc=taobaoSearch
+    5.锂电池（一个）（要公头的）
+    https://item.taobao.com/item.htm?abbucket
