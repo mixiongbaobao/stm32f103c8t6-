@@ -22,4 +22,4 @@
     https://detail.tmall.com/item.htm?abbucket=17&id=799039797204&mi_id=0000V2XRkT6oWD-iDVfcejgF-E0HCU7gG5VAhR1ZNNpKmP4&ns=1&priceTId=2150437317707274453262592e12e1&spm=a21n57.1.hoverItem.40&utparam=%7B%22aplus_abtest%22%3A%2291195d5a6fe4a88e343fbc0dbfc00df0%22%7D&xxc=taobaoSearch
     5.锂电池（一个）（要公头的）
     https://item.taobao.com/item.htm?abbucket
-     #我会在开学后更新小车硬件连接的照片细
+     #我会在开学后更新小车硬件连接的照片细节
