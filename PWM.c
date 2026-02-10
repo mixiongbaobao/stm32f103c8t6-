@@ -40,7 +40,7 @@ void PWM_Init(void)
 	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;       //输出极性，选择为高，若选择极性为低，则输出高低电平取反
 	TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;   //输出使能
 	TIM_OCInitStructure.TIM_Pulse = 50;								//初始的CCR值
-	TIM_OC3Init(TIM2, &TIM_OCInitStructure);                        //将结构体变量交给TIM_OC4Init，配置TIM2的输出比较通道4
+	TIM_OC3Init(TIM2, &TIM_OCInitStructure);                        //将结构体变量交给TIM_OC3Init，配置TIM2的输出比较通道3
 	TIM_OCInitStructure.TIM_Pulse = 50;								// 初始占空比30
 	TIM_OC2Init(TIM2, &TIM_OCInitStructure);                       //将结构体变量交给TIM_OC2Init，配置TIM2的输出比较通道2
 	
@@ -63,3 +63,4 @@ void PWM_SetCompare2(uint16_t Compare)
 {
 	TIM_SetCompare2(TIM2, Compare);   //设置CCR2的值
 }
+
